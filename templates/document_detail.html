@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document {{ document.id }}</title>
+</head>
+<body>
+    <h1>Document {{ document.id }}</h1>
+    <p><strong>Filename:</strong> {{ document.original_filename }}</p>
+    <p><strong>Type:</strong> {{ document.doc_type }}</p>
+    <p><strong>Status:</strong> {{ document.status }}</p>
+    {% if document.error_message %}
+    <p><strong>Error:</strong> {{ document.error_message }}</p>
+    {% endif %}
+
+    {% if artifact %}
+    <h2>Outputs</h2>
+    <p><a href="/documents/{{ document.id }}/download/pdf">Download Searchable PDF</a></p>
+    <p><a href="/documents/{{ document.id }}/download/json">Download JSON</a></p>
+    <h3>JSON Preview</h3>
+    <pre>{{ artifact.extracted_json | tojson(indent=2) }}</pre>
+    {% else %}
+    <p>Processing outputs not yet available.</p>
+    {% endif %}
+
+    <p><a href="/documents">Back to list</a></p>
+</body>
+</html>

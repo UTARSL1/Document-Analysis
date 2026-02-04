@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documents</title>
+</head>
+<body>
+    <h1>Documents</h1>
+    <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Filename</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for doc in documents %}
+            <tr>
+                <td><a href="/documents/{{ doc.id }}">{{ doc.id }}</a></td>
+                <td>{{ doc.original_filename }}</td>
+                <td>{{ doc.doc_type }}</td>
+                <td>{{ doc.status }}</td>
+                <td>{{ doc.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="/upload">Upload another document</a></p>
+</body>
+</html>

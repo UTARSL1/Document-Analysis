@@ -1,0 +1,18 @@
+[
+  {"id": "birth_certificate", "name": "Birth Certificate", "expected_regions": ["header", "body", "signature"], "template_hints": null},
+  {"id": "id_card_front", "name": "ID Card Front", "expected_regions": ["photo", "text", "signature"], "template_hints": null},
+  {"id": "id_card_back", "name": "ID Card Back", "expected_regions": ["text", "barcode"], "template_hints": null},
+  {"id": "passport_bio", "name": "Passport Bio Page", "expected_regions": ["photo", "mrz", "text"], "template_hints": null},
+  {"id": "driver_license", "name": "Driver License", "expected_regions": ["photo", "text", "barcode"], "template_hints": null},
+  {"id": "utility_bill", "name": "Utility Bill", "expected_regions": ["header", "table", "footer"], "template_hints": null},
+  {"id": "bank_statement", "name": "Bank Statement", "expected_regions": ["header", "table"], "template_hints": null},
+  {"id": "insurance_card", "name": "Insurance Card", "expected_regions": ["text", "barcode"], "template_hints": null},
+  {"id": "tax_form", "name": "Tax Form", "expected_regions": ["header", "table"], "template_hints": null},
+  {"id": "invoice", "name": "Invoice", "expected_regions": ["header", "table", "footer"], "template_hints": null},
+  {"id": "receipt", "name": "Receipt", "expected_regions": ["header", "table", "total"], "template_hints": null},
+  {"id": "medical_record", "name": "Medical Record", "expected_regions": ["header", "body", "table"], "template_hints": null},
+  {"id": "academic_transcript", "name": "Academic Transcript", "expected_regions": ["header", "table"], "template_hints": null},
+  {"id": "employment_contract", "name": "Employment Contract", "expected_regions": ["header", "body", "signature"], "template_hints": null},
+  {"id": "business_license", "name": "Business License", "expected_regions": ["header", "body", "signature"], "template_hints": null},
+  {"id": "custom_other", "name": "Custom/Other", "expected_regions": [], "template_hints": null}
+]

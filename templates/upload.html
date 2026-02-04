@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Document</title>
+</head>
+<body>
+    <h1>Upload Document</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="doc_type">Document Type</label>
+        <select name="doc_type" id="doc_type" required>
+            {% for doc in doc_types %}
+            <option value="{{ doc.id }}">{{ doc.name }}</option>
+            {% endfor %}
+        </select>
+        <br />
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" required />
+        <br />
+        <button type="submit">Upload</button>
+    </form>
+    <p><a href="/documents">View Documents</a></p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Document OCR Output",
+  "type": "object",
+  "required": ["document_id", "doc_type", "pages", "metadata"],
+  "properties": {
+    "document_id": {"type": "string"},
+    "doc_type": {"type": "string"},
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page_no", "width", "height", "full_text", "elements"],
+        "properties": {
+          "page_no": {"type": "integer"},
+          "width": {"type": "integer"},
+          "height": {"type": "integer"},
+          "full_text": {"type": "string"},
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "bbox", "text", "confidence", "reading_order_index"],
+              "properties": {
+                "type": {"type": "string"},
+                "bbox": {
+                  "type": "array",
+                  "items": {"type": "number"},
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "text": {"type": "string"},
+                "confidence": {"type": "number"},
+                "reading_order_index": {"type": "integer"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["layout_model", "ocr_model", "created_at", "warnings"],
+      "properties": {
+        "layout_model": {"type": "string"},
+        "ocr_model": {"type": "string"},
+        "created_at": {"type": "string"},
+        "warnings": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}
