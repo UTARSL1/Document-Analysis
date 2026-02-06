@@ -1,0 +1,86 @@
+[
+    {
+        "id": "birth_certificate",
+        "name": "Birth Certificate",
+        "template_file": "birth_certificate.json",
+        "priority": "high",
+        "description": "Official birth registration certificate"
+    },
+    {
+        "id": "id_card_front",
+        "name": "ID Card (Front)",
+        "template_file": "id_card_front.json",
+        "priority": "high",
+        "description": "National ID card front side"
+    },
+    {
+        "id": "id_card_back",
+        "name": "ID Card (Back)",
+        "template_file": "id_card_back.json",
+        "priority": "high",
+        "description": "National ID card back side"
+    },
+    {
+        "id": "passport_bio_page",
+        "name": "Passport Bio Page",
+        "template_file": "passport_bio_page.json",
+        "priority": "high",
+        "description": "Passport biographical information page"
+    },
+    {
+        "id": "marriage_certificate",
+        "name": "Marriage Certificate",
+        "template_file": "marriage_certificate.json",
+        "priority": "medium",
+        "description": "Official marriage registration certificate"
+    },
+    {
+        "id": "death_certificate",
+        "name": "Death Certificate",
+        "template_file": "death_certificate.json",
+        "priority": "medium",
+        "description": "Official death registration certificate"
+    },
+    {
+        "id": "land_title",
+        "name": "Land Title",
+        "template_file": "land_title.json",
+        "priority": "medium",
+        "description": "Property ownership document"
+    },
+    {
+        "id": "tax_record",
+        "name": "Tax Record",
+        "template_file": "tax_record.json",
+        "priority": "low",
+        "description": "Tax payment or assessment record"
+    },
+    {
+        "id": "court_document",
+        "name": "Court Document",
+        "template_file": "court_document.json",
+        "priority": "medium",
+        "description": "Legal court filing or judgment"
+    },
+    {
+        "id": "census_record",
+        "name": "Census Record",
+        "template_file": "census_record.json",
+        "priority": "low",
+        "description": "Population census form"
+    },
+    {
+        "id": "military_record",
+        "name": "Military Record",
+        "template_file": "military_record.json",
+        "priority": "medium",
+        "description": "Military service record"
+    },
+    {
+        "id": "immigration_document",
+        "name": "Immigration Document",
+        "template_file": "immigration_document.json",
+        "priority": "high",
+        "description": "Immigration or visa document"
+    }
+]

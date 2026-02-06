@@ -1,0 +1,28 @@
+# Worker Dependencies
+celery==5.3.6
+redis==5.0.1
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+pydantic==2.5.3
+python-dotenv==1.0.0
+boto3==1.34.34
+
+# Image Processing
+opencv-python-headless==4.9.0.80
+Pillow==10.2.0
+numpy==1.26.3
+scikit-image==0.22.0
+
+# OCR/HTR
+transformers==4.37.2
+torch==2.1.2
+torchvision==0.16.2
+pytesseract==0.3.10
+
+# PDF Processing
+ocrmypdf==16.0.3
+pikepdf==8.11.2
+img2pdf==0.5.1
+reportlab==4.0.9
+PyPDF2==3.0.1
+pydantic-settings==2.1.0

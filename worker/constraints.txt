@@ -1,0 +1,4 @@
+# Exclude PyMuPDF - it's an optional dependency of PaddleOCR
+# that requires swig, make, g++ and takes 20+ minutes to compile
+# The core OCR functionality works without it
+PyMuPDF<1.0.0

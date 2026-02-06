@@ -1,0 +1,81 @@
+{
+    "doc_type": "birth_certificate",
+    "version": 1,
+    "description": "Standard birth certificate template",
+    "anchor_points": [
+        {
+            "name": "header_seal",
+            "bbox": [
+                50,
+                50,
+                200,
+                150
+            ],
+            "description": "Government seal/logo in top left"
+        }
+    ],
+    "zones": [
+        {
+            "name": "full_name",
+            "bbox": [
+                150,
+                300,
+                650,
+                350
+            ],
+            "type": "text",
+            "description": "Full name of person",
+            "validation": {
+                "pattern": "^[A-Za-z\\s]+$",
+                "required": true,
+                "min_length": 2,
+                "max_length": 100
+            }
+        },
+        {
+            "name": "birth_date",
+            "bbox": [
+                150,
+                400,
+                400,
+                450
+            ],
+            "type": "date",
+            "description": "Date of birth",
+            "validation": {
+                "pattern": "^\\d{1,2}/\\d{1,2}/\\d{4}$",
+                "required": true
+            }
+        },
+        {
+            "name": "birth_place",
+            "bbox": [
+                150,
+                500,
+                650,
+                550
+            ],
+            "type": "text",
+            "description": "Place of birth",
+            "validation": {
+                "required": true,
+                "min_length": 2
+            }
+        },
+        {
+            "name": "registration_number",
+            "bbox": [
+                150,
+                600,
+                450,
+                650
+            ],
+            "type": "alphanumeric",
+            "description": "Registration/certificate number",
+            "validation": {
+                "pattern": "^[A-Z0-9]{10,15}$",
+                "required": true
+            }
+        }
+    ]
+}
